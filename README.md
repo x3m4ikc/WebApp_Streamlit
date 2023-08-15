@@ -32,6 +32,7 @@ For build and run docker image named 'titanic':
 
 '''
 $ docker build -t titanic .
+
 $ docker run -it --rm -p '8501:8501' titanic
 '''
 
