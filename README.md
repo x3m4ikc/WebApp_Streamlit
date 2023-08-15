@@ -1,6 +1,6 @@
 # ml_streamlit
 
-This is tutorial project to test abilities [Streamlit](https://www.streamlit.io/) framework. The data used in this repo is the [Titanic dataset](https://www.kaggle.com/c/titanic) .
+This is pet project to test abilities [Streamlit](https://www.streamlit.io/) framework. The data used in this repo is the [Titanic dataset](https://www.kaggle.com/c/titanic) .
 
 Try app [here](https://titanic1prediction.streamlit.app/)
 
