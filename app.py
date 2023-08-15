@@ -85,7 +85,7 @@ class TitanicApp:
         st.write("## Ваши данные")
         st.write(df)
 
-    def write_prediction(self, prediction, prediction_probas):
+    def write_prediction(self, prediction, prediction_probas) -> None:
         st.write("## Вероятность предсказания")
         st.write(prediction)
 
