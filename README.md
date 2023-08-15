@@ -31,9 +31,11 @@ Open http://localhost:8501/ to view the app.
 For build and run docker image named 'titanic':
 
 '''
+
 $ docker build -t titanic .
 
 $ docker run -it --rm -p '8501:8501' titanic
+
 '''
 
 Open http://localhost:8501/ to view the app
