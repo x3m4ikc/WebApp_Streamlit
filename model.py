@@ -49,7 +49,7 @@ class TitanicSurvivalClassifier:
         with open(path, 'wb') as file:
             dump(self.model, file)
 
-        print('Model was saved to {path}')
+        print(f'Model was saved to {path}')
 
     def load_model_and_predict(self, df, path='data/model_weights.mw') -> Tuple[pd.DataFrame, pd.DataFrame]:
         with open(path, 'rb') as file:
