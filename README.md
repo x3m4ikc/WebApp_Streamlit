@@ -5,6 +5,7 @@ This is tutorial project to test abilities [Streamlit](https://www.streamlit.io/
 Try app [here](https://titanic1prediction.streamlit.app/)
 
 ## Files
+
 - `app.py`: streamlit app file
 - `model.py`: script for generating the Random Forest classifier model
 - `titanic.csv` and `model_weights.mw`: data file and pre-trained model
@@ -14,7 +15,9 @@ Try app [here](https://titanic1prediction.streamlit.app/)
 ## Run project locally
 
 ### Shell
+
 For directly run streamlit locally in repo root folder as follows:
+
 '''shell
 $ python -m venv venv
 $ source venv/bin/activate
@@ -24,11 +27,14 @@ $ streamlit run app.py
 Open http://localhost:8501/ to view the app.
 
 ### Docker
+
 For build and run docker image named 'titanic':
+
 '''
 $ docker build -t titanic .
 $ docker run -it --rm -p '8501:8501' titanic
 '''
+
 Open http://localhost:8501/ to view the app
 
 ### Streamlit Cloud Deployment
