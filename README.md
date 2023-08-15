@@ -2,7 +2,7 @@
 
 This is pet project to test abilities [Streamlit](https://www.streamlit.io/) framework. The data used in this repo is the [Titanic dataset](https://www.kaggle.com/c/titanic) .
 
-Try app [here](https://titanic1prediction.streamlit.app/)
+Try app [![Open in Streamlit][share_badge]][share_link]
 
 ## Files
 
@@ -43,3 +43,6 @@ The repo must be public and have a 'requirements.txt' file
 Sign into share.streamlit.io with your GitHub email address, you need to have access to Streamlit Cloud service
 3. Deploy and share
 Click "New App", fill in your repo, branch, file path, choose a Python version (3.11 for this app) and click "Deploy", then you  are able to see your app
+
+[share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
+[share_link]: https://titanic1prediction.streamlit.app/
