@@ -18,26 +18,21 @@ Try app [here](https://titanic1prediction.streamlit.app/)
 
 For directly run streamlit locally in repo root folder as follows:
 
-'''shell
+```shell
 $ python -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ streamlit run app.py
-'''
+```
 Open http://localhost:8501/ to view the app.
 
 ### Docker
 
 For build and run docker image named 'titanic':
-
-'''
-
+```
 $ docker build -t titanic .
-
 $ docker run -it --rm -p '8501:8501' titanic
-
-'''
-
+```
 Open http://localhost:8501/ to view the app
 
 ### Streamlit Cloud Deployment
