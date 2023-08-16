@@ -9,7 +9,7 @@ Try app [![Open in Streamlit][share_badge]][share_link]
 - `app.py`: streamlit app file - main page
 - `table.py`: streamlit app file - second page
 - `model.py`: script for generating the Random Forest classifier model
-- `titanic.csv` and `model_weights.mw`: data file and pre-trained model
+- `titanic_dataset_train.csv` and `model_weights.mw`: data file and pre-trained model
 - `requirements.txt`: package requirements files
 - `Dockerfile`: for docker deployment
 
