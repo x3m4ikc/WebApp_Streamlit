@@ -18,9 +18,6 @@ class TitanicApp:
             page_icon=':ship:',
             layout='wide',
             initial_sidebar_state='auto',
-            menu_items={
-                'About': 'Pet-project для обучения возможностям streamlit'
-            }
         )
 
         st.write(
