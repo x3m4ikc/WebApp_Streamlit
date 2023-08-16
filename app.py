@@ -2,14 +2,24 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 from model import TitanicSurvivalClassifier
+from st_pages import Page, show_pages
 
 class TitanicApp:
     def __init__(self) -> None:
         self.classifier = TitanicSurvivalClassifier()
 
     def run(self) -> None:
+        self.show_all_pages()
         self.show_main_page()
         self.proccess_side_inputs()
+
+    def show_all_pages(self) -> None:
+        show_pages(
+            [
+                Page('app.py', 'Home'),
+                Page('pages/table.py', 'Table')
+            ]
+        )
 
     def show_main_page(self) -> None:
         image = Image.open('data/image.jpg')

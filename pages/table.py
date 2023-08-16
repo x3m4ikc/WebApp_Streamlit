@@ -9,6 +9,7 @@ import streamlit as st
 class ShowTable:
     def __init__(self, path='data/titanic_dataset_train.csv') -> None:
         self.df = pd.read_csv(path)
+        self.none_list = ['None', 'none', 'NONE']
 
     def run(self) -> None:
         self.show_main_page()
@@ -42,8 +43,8 @@ class ShowTable:
                         data = {'Выжил': 1,'Погиб': 0}
 
                         self.df = self.df[self.df[column] == data[user_radio_input]]
-
-                        continue
+# age cabin
+                        continue 
 
                     if is_int64_dtype(self.df[column]):
                         _min = int(self.df[column].min())
@@ -65,13 +66,17 @@ class ShowTable:
                             max_value=_max,
                             value=(_min, _max),
                         )
+
                         self.df = self.df[self.df[column].between(*user_int_input)]
 
                     else:
                         user_text_input = right.text_input(
                             f'Substring or regex in {column}',
                         )
-                        if user_text_input:
+                        if user_text_input in self.none_list:
+                            self.df = self.df[self.df[column].isna()]
+                            
+                        else:    
                             self.df = self.df[self.df[column].astype(str).str.contains(user_text_input)]
 
     def hide_columns(self) -> None:
