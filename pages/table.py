@@ -92,8 +92,8 @@ class ShowTable:
         if hide_columns:
             self.hide_columns()
         
-        filter = st.checkbox('Добавить фильтры')
-        if filter:
+        filter_dataframe = st.checkbox('Добавить фильтры')
+        if filter_dataframe:
             self.filter_dataframe()
         
         st.dataframe(self.df)
