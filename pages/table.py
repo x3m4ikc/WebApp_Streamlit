@@ -89,13 +89,11 @@ class ShowTable:
 
     def show_dataframe(self) -> None:
         hide_columns = st.checkbox('Убрать лишние колонки')
-        
         if hide_columns:
             self.hide_columns()
         
-        modify = st.checkbox('Добавить фильтры')
-        
-        if modify:
+        filter = st.checkbox('Добавить фильтры')
+        if filter:
             self.filter_dataframe()
         
         st.dataframe(self.df)
