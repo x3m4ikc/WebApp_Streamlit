@@ -43,7 +43,7 @@ class ShowTable:
                         data = {'Выжил': 1,'Погиб': 0}
 
                         self.df = self.df[self.df[column] == data[user_radio_input]]
-# age cabin
+
                         continue 
 
                     if is_int64_dtype(self.df[column]):
