@@ -39,6 +39,14 @@ class TitanicApp:
         )
 
         st.image(image)
+        
+        hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+        st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
     def proccess_side_inputs(self) -> None:
         st.sidebar.header('Задайте параметры пассажира')

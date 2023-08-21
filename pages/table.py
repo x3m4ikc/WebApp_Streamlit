@@ -28,6 +28,14 @@ class ShowTable:
             Поиграемся с ней
             """
         )
+        
+        hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+        st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
     def filter_dataframe(self) -> None:
         modification_container = st.container()
