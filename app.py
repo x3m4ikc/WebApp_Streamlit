@@ -17,7 +17,8 @@ class TitanicApp:
         show_pages(
             [
                 Page('app.py', 'Home'),
-                Page('pages/table.py', 'Table')
+                Page('pages/table.py', 'Table'),
+                Page('pages/chat.py', 'Chat'),
             ]
         )
 
