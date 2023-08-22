@@ -39,7 +39,7 @@ class SupportChat:
 
     def init_chat_history(self):
         if 'messages' not in st.session_state:
-            st.session_state.messages = []
+            st.session_state.messages = [{'role': 'assistant', 'content': 'Добрый день! Чем могу Вам помочь?'}]
 
         for message in st.session_state.messages:
             with st.chat_message(message['role']):
@@ -51,8 +51,8 @@ class SupportChat:
             st.session_state.messages.append({'role': 'user', 'content': prompt})
 
     def send_email_to_support(self):            # TODO: имейл для бота
-        if st.session_state.messages:
-            msg = st.session_state.messages[-1]['content']
+        if st.session_state.messages[-1]['role'] == 'user':
+            msg = st.session_state.messages[-1]['content'] + '\nHello from titanic'
             letter = 'Subject: {}\n\n{}'.format('SUBJECT', msg)
             letter = letter.encode('UTF-8')
 
@@ -62,7 +62,7 @@ class SupportChat:
             server.quit()
 
     def give_user_answer(self):
-        if st.session_state.messages:
+        if st.session_state.messages[-1]['role'] == 'user':
             response = 'Ваше обращение принято в обработку'
             with st.chat_message('assistant'):
                     st.markdown(response)
