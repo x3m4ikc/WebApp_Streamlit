@@ -1,8 +1,10 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
-from model import TitanicSurvivalClassifier
 from st_pages import Page, show_pages
+
+from model import TitanicSurvivalClassifier
+
 
 class TitanicApp:
     def __init__(self) -> None:

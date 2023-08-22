@@ -1,9 +1,6 @@
-from pandas.api.types import (
-    is_int64_dtype,
-    is_float_dtype,
-)
 import pandas as pd
 import streamlit as st
+from pandas.api.types import is_float_dtype, is_int64_dtype
 
 
 class ShowTable:
