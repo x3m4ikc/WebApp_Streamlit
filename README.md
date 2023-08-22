@@ -8,6 +8,7 @@ Try app [![Open in Streamlit][share_badge]][share_link]
 
 - `app.py`: streamlit app file - main page
 - `table.py`: streamlit app file - second page
+- `chat.py`: streamlit app file - third page (support chat)
 - `model.py`: script for generating the Random Forest classifier model
 - `titanic_dataset_train.csv` and `model_weights.mw`: data file and pre-trained model
 - `requirements.txt`: package requirements files
